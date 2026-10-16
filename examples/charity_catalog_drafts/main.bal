@@ -29,6 +29,9 @@ public function main() returns error? {
 
     foreach string entry in regexp:split(re `,`, itemTitles) {
         string title = entry.trim();
+        if title.length() == 0 {
+            continue;
+        }
         listing:ItemDraft draft = {
             condition: "USED_EXCELLENT",
             format: "AUCTION",

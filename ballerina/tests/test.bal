@@ -30,9 +30,13 @@ function testCreateItemDraft() returns error? {
         {xEBAYCMARKETPLACEID: "EBAY_US", contentLanguage: "en-US"},
         {
             condition: "NEW",
-            categoryId: "9355",
+            categoryId: "112529",
             format: "FIXED_PRICE",
-            product: {title: "Wireless Headphones", brand: "Acme", description: "Over-ear wireless headphones"},
+            product: {
+                title: "Acme AX-200 Wireless Bluetooth Over-Ear Headphones, Black",
+                brand: "Acme",
+                description: "Over-ear wireless headphones"
+            },
             pricingSummary: {price: {currency: "USD", value: "59.99"}}
         }
     );
